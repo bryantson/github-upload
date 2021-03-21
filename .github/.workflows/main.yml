@@ -1,0 +1,14 @@
+name: A workflow for simulating running Docker
+on: push
+
+jobs:
+  build:
+    name: Docker in Action
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+      - name: Use local action-a directory
+        uses: /action-a
+        with:
+          CITY: "Austin"

@@ -1,0 +1,17 @@
+name: Workflow Docker
+description: Simple workflow for running Dockerfile
+author: lovepool@utexas.edu
+
+inputs:
+  CITY:
+    description: City of place
+    required: true
+    default: "Dallas"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "whale"
+  color: red
